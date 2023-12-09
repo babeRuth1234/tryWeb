@@ -653,7 +653,7 @@ body {
 .darkColor{
     color: #1f1f27;
 }
-@media screen and (max-width: 1277px) {
+@media screen and (max-width: 700px) {
     .nav-bar{
         color: #fff;
         font-size: 1.1rem;
