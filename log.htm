@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./clock.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./main-cont.css">
+    <script src="https://www.google.com/recaptcha/api.js" defer async></script>
+    <script src="./clock.js"></script>
+    <script src="./web1.js" defer></script>
+
+</head>
+<body>
+    <header class="head">
+        <nav class="nav"><a href="./web.html"></a><img class="naimg" src="./kindpng_4046892.png" alt="f1 png" width="279px" height="70px"></nav>
+        <div class="options">
+            <button class="signin linked"><a class="si" href="./log.htm">Sign in</a></button>
+            <button class="register"><a class="si" href="./reg.htm">Register</a></button>
+        </div>
+    </header>
+        
+        <form class="inform">
+            
+            <h1 class="intext">SIGN IN</h1>
+            <div class="response"></div>
+            <hr class="keke">
+            <div class="form-container">
+                <div class="user-email">
+                    <label for="email" class="emailtext">user name</label>
+                    <input type="text" class="email" id="username" placeholder="Enter your email address">
+                </div>
+                <div class="form-container">
+                    <label for="password" class="passtext" >Password</label>
+                    <input type="password" class="password" placeholder="Password" id="password">   
+                    <div class="g-recaptcha" data-sitekey="6Le8trkmAAAAAEdUV7ga9_n_Qff7pbvjJckkU4Yf" data-callback="allowLogin"></div>  
+                </div>
+
+                <button class="signbtn garnd-color"  id="submit" type="submit">Sign in</button>
+                <button class="rebtn"><a class="alv2" href="./reg.htm">New account</a></button>
+
+            </div>
+            
+        </form>
+
+        <div class="dem">
+            <span class="f2"><img src="./kindpng_4046892.png" alt="" width="279px" height="70px"></span>
+            <div class="dropdown">
+                <span><h2>Privacy policy</h2></span>
+                <div class="dropdown-content">
+                    <p>there will be policies here</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span><h2>Subscription</h2></span>
+                <div class="dropdown-content">
+                    <p>there will be policies here</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span><h2>Terms of use</h2></span>
+                <div class="dropdown-content">
+                    <p>there will be policies here</p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span><h2>FAQs</h2></span>
+                <div class="dropdown-content">
+                    <p>there will be policies here</p>
+                </div>
+            </div>
+        </div>
+        <footer class="foot2">
+            <h5 class="foot-text2">Support | Legal | Formula1.com | 2003-2022 Formula 1 World Championship</h5>
+        </footer>
+       
+        
+        
+        
+    <script src="./all.min.js"></script>
+    <script src="./script2.js"></script>
+</body>
+</html>

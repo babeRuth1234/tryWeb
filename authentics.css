@@ -1,0 +1,359 @@
+
+
+.intro-pic {
+    margin-top: 1%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1f1f27;
+    position: fixed;
+    z-index: 93;
+   
+    /* border: solid 1px #e10600; */
+
+
+    
+}
+.cartnum {
+    height: 100%;
+    width: 89%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    padding-left: 10%;
+}
+
+.cart-col {
+    border-bottom: 3px solid #e10600;
+}
+.left-shop {
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px violet; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+}
+
+.right-shop {
+    /* border: solid 1px #e10600; */
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1%;
+    padding-right: 9%;
+    position: relative;
+    z-index: 100;
+
+
+}
+.cart-act{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cart-container{
+    z-index: 90;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    /* background-color: var(--bg); */
+    background: rgba(58, 52, 52, 0.25);
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    height: 100vh;
+    display: none;
+    overflow-y: scroll;
+    
+    justify-content: center;
+    padding: 10%;
+}
+
+.cartInThere{
+    margin-top: 2%;
+    width: 80%;
+    height: 30%;
+    /* border: solid 3px #e10600; */
+    display: flex;
+    flex-direction: row;
+    color: #1f1f27;
+    background-color: #fff;
+    border-radius: 9px;
+
+}
+
+.cartInThere-price{
+    width: 25%;
+    height: 100%;
+    /* border: solid 3px #7fe100; */
+    box-sizing: border-box;
+    display: flex;
+    padding: 4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.cartInThere-desc{
+    width: 25%;
+    height: 100%;
+    /* border: solid 3px #001ee1; */
+    box-sizing: border-box;
+    font-size: 1.7vw;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cartInThere-pic{
+    width: 25%;
+    height: 100%;
+    /* border: solid 3px #e100b4; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.remove{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    height: 35%;
+    width: 70%;
+    background-color: #e10600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:  8px;
+    /* border: solid 3px #e10600; */
+
+}
+
+.pri-tag{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 3px #e10600; */
+}
+
+.QTY{
+    width: 25%;
+    height: 100%;
+    /* border: solid 3px #00e1d9; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color: #1f1f27;
+}
+.right-shop:hover {
+    background-color: #e10600;
+}
+.cart-card {
+    margin: 1rem 0;
+    border-radius: 5px;
+    background-color: var(--wht);
+    padding: 3rem;
+    box-shadow: var(--shad);
+}
+
+.QTY-btn {
+    cursor: pointer;
+    height: 20%;
+    width: 15%;
+    border-radius: 7px;
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add{
+    background: #fff;
+    /* box-shadow: 0px 2px 10px #1f1f27; */
+    border: solid 2px #1f1f27;
+}
+
+.sub{
+    background: #e10600;
+    color: #fff;
+    border: solid 2px #e10600;
+
+}
+
+.add:hover {
+    border: solid 3px #1f1f27;
+}
+
+.sub:hover {
+    border: solid 2px #fff;
+
+}
+.QTY-btn p {
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+
+.qty-num{
+    font-size: 1.8vw;
+    font-weight: 500;
+    text-align: center;
+}
+.shop-banner {
+    height: 40vh;
+    width: 100%;
+    background: url(./images/wp8836741.jpg);
+    background: linear-gradient( to left,transparent 0%,black 100%),url(./images/wp8836741.jpg);;
+
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+
+}
+.the-shop-items {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    gap: 2%;
+    background-color: #fff ;
+    /* row-gap: 5%; */
+}
+
+.the-main-item {
+    width: 20%;
+    height: 50vh;
+    /* border: solid 1px #e10600; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.7%;
+    /* box-shadow: 1px 1px 8px 1px  #1f1f27; */
+    border-radius: 8px;
+    font-size: 1vw;
+    background-color: #fff;
+    color: #1f1f27;
+    border: solid 3px #e10600;
+}
+
+.sprint-sale{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 10vw;
+    border-bottom: solid 3px #e10600;
+}
+.sale{
+    color: #e10600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 10vw;
+    border-bottom: solid 3px #fff;
+}
+
+.price-tag{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px violet; */
+}
+
+.add-to-cart{
+    height: 50%;
+    width: 55%;
+    background-color: #e10600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    border: solid 3px transparent;
+}
+
+
+.add-to-cart:hover {
+    color: #e10600;
+    background-color: #fff;
+    border: solid 3px #e10600;
+}
+
+.price{
+    align-items: center;
+    height: 50%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #e10600;
+    background-color: #fff;
+}
+
+.item-desc{
+
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+}
+
+.item-image{    
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hrc {
+    width: 80%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

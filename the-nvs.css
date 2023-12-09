@@ -1,0 +1,578 @@
+.sec {
+    /* position: absolute; */
+/*     
+    display: flex;
+    height: fit-content;
+    justify-self: center; */
+    /* z-index: 99; */
+    /* margin:  0 auto; */
+}
+
+.sched-hold{
+    /* border: solid 1px blue; */
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50vh;
+    flex-direction: row;
+    margin-top: 3%;
+    gap: 2%;
+}
+
+.prev{
+    display: flex;
+    /* border: solid red 1px; */
+    height: 74.8%;
+    width: 24.6%;
+    text-align: center;
+    justify-content: left;
+    align-items:last baseline ; 
+    position: relative;
+    /* box-sizing: border-box; */
+
+}
+
+.prev::before {
+    content: '';
+    position: absolute;
+    bottom:  0;
+    right:  0;
+    border-top-right-radius: 40px;
+    border-top: 9px #38383f solid;
+    border-right: 9px #38383f solid;
+    width: 70%;
+    height: 100%;
+
+}
+
+.prev::after {
+    color: #fff;
+    font-weight: 900;
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    content: 'NEXT';
+    position: absolute;
+    top:  -6%;
+    left:  6%;
+    /* border-top-right-radius: 60px; */
+    /* border: 1px red solid; */
+    /* border-right: 12px red solid; */
+    width: 10%;
+    height: 10%;
+}
+.p{
+    margin-top: 400px;
+}
+
+.inner-prev{
+    height: 90%;
+    width: 90%;
+    /* border: solid 1px blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    
+}
+
+.pic-hold {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border: solid 1px purple; */
+    height: 60%;
+    width: 100%;
+    background-image: url(./images/Spanish_Grand_Prix.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.text-hold {
+    border-right: solid 1px grey;
+    border-bottom: solid 1px grey;
+    border-bottom-right-radius: 10px;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.jun{
+    height: 50%;
+    width: 100%;
+    /* border: solid 1px tan; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+    box-sizing: border-box;
+    padding-right:1vw;
+
+}
+.formula{
+    padding-top: 5px;
+    gap: -6px;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    /* border: solid 1px rgb(140, 210, 209); */
+    align-items: center;
+    justify-content: center;
+}
+
+.foura{
+    width: 100%;
+    height: 36%;
+    font-size: 1vw;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 600;
+    /* border: firebrick 1px solid; */
+    display: flex;
+    align-items: left;
+
+}
+
+.dates {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.can{
+    background-image: url(./images/Canadian_Grand_Prix.png);
+}
+.aus{
+    background-image: url(./images/Austrian_Grand_Prix.png);
+}
+.mona{
+    background-image: url(./images/Monaco_Grand_Prix.png);
+}
+
+.sched-hold > .prev:nth-child(2)::before{
+    border-top: 9px #e10600 solid;
+    border-right: 9px #e10600 solid;
+
+}
+
+.sched-hold > .prev:nth-child(1)::after{
+
+    content: "PREVIOUS";
+
+}.sched-hold > .prev:nth-child(3)::after{
+    content: "UPCOMING";
+    
+}.sched-hold > .prev:nth-child(4)::after{
+
+    content: "UPCOMING";
+
+}
+
+.driv-ers {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 100%;
+   height: 100%;
+   /* border: solid 1px violet; */
+   gap: 3%;
+}
+.driver-tile {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    /* border: solid 1px rgb(236, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: 100%;
+    gap: 2%;
+}
+.the-grid {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border: solid 1px teal; */
+}
+
+.d-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px springgreen; */
+    border-left: solid 5px #37bedd;
+    width: 90%;
+    color: #fff;
+    font-weight: 600;
+    /* padding-left: 10%; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+.name{
+    display: flex;
+    
+    /* border: solid 1px rgb(255, 0, 208); */
+    height: 50%;
+    width: 80%;
+}
+
+.right-row {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* border: solid 1px rgb(119, 0, 255); */
+    height: 50%;
+    width: 10%;
+}
+
+.rea{
+    border-left: solid 5px #c92d4b;
+}
+.red{
+    border-left: solid 5px #f91536;
+}
+.bul{
+    border-left:  solid 5px #3671c6;
+}
+.ora{
+    border-left:solid 5px #f58020 ;
+}
+.dar{
+    border-left: solid 5px #b6babd;
+}
+.pur{
+    border-left: solid 5px #2293d1;
+}
+.sea{
+    border-left: solid 5px #5e8faa;
+}
+.gre{
+ border-left: solid 5px #358c75;
+}
+.sky{
+    border-left: solid 5px #37bedd;
+}
+.lit{
+    border-left: solid 5px #6cd3bf;
+}
+
+.team-tile {
+    height: 100%;
+    width: 20%;
+    /* border: solid 1px #b6babd; */
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.car-tile {
+    box-sizing: border-box;
+    width: 100%;
+    height: 27%;
+    /* border: solid 1px #0091ff; */
+    color: #fff;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-right: solid 1px #b6babd;
+    border-bottom: solid 1px #b6babd;
+    border-bottom-right-radius: 10px;
+}
+
+.team-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: solid 1px #ff0000; */
+    height: 29%;
+    width: 100%;
+
+}
+.brand{
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px #00ff4c; */
+
+}
+.achor{
+    align-items: center;
+    padding-right: 5%;
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px #eeff00; */
+}
+
+.carPic {
+    height: 69%;
+    width: 100%;
+    /* border: solid 1px #c92d4b; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+   
+
+}
+.thecar{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    /* border: solid 1px #f58020; */
+    position: relative;
+
+}
+
+.thecar::before {
+    background: url("./images/teamcar-astonmartin.webp");
+    content: '';
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom:  -11px;
+    right:  10px;
+    border-top-right-radius: 40px;
+    /* border-top: 9px #38383f solid;
+    border-right: 9px #38383f solid; */
+    width: 100%;
+    height: 100%;
+
+}
+/* .sched-hold > .prev:nth-child(4)::after */
+
+
+.team-tile > .thecar:nth-child(1)::before{
+    background: url("./images/alfa-romeo-racing.webp");
+}
+/* .team-tile > .thecar:nth-child(2)::before{
+    background: url("./images/alphatauri.webp");
+}.team-tile > .thecar:nth-child(3)::before{
+    background: url("./images/alpine.webp");
+}.team-tile > .thecar:nth-child(4)::before{
+    background: url("./images/teamcar-astonmartin.webp");
+}.team-tile > .thecar:nth-child(5)::before{
+    background: url("./images/ferrari.webp");
+}.team-tile > .thecar:nth-child(6)::before{
+    background: url("./images/teamcar-haas.webp");
+}.team-tile > .thecar:nth-child(7)::before{
+    background: url("./images/teamcar-mclaren.webp");
+}.team-tile > .thecar:nth-child(8)::before{
+    background: url("./images/teamcar-mercedes.webp");
+}.team-tile > .thecar:nth-child(9)::before{
+    background: url("./images/teamcar-redbull.webp");
+}.team-tile > .thecar:nth-child(10)::before{
+    background: url("./images/williams.webp");
+} */
+
+.bot::before{
+    background: url("./images/alfa-romeo-racing.webp");
+    background-size: cover;
+    background-position: center;
+}
+.yuk::before{
+    background: url("./images/alphatauri.webp");
+    background-size: cover;
+    background-position: center;
+}
+.oco::before{
+    background: url("./images/alpine.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.lec::before{
+    background: url("./images/ferrari.webp");
+    background-size: cover;
+    background-position: center;
+}
+.hul::before{
+    background: url("./images/teamcar-haas.webp");
+    background-size: cover;
+    background-position: center;
+}
+.nor::before{
+    background: url("./images/teamcar-mclaren.webp");
+    background-size: cover;
+    background-position: center;
+}
+.ham::before{
+    background: url("./images/teamcar-mercedes.webp");
+    background-size: cover;
+    background-position: center;
+}
+.max::before{
+    background: url("./images/teamcar-redbull.webp");
+    background-size: cover;
+    background-position: center;
+}
+.alb::before{
+    background: url("./images/williams.webp");
+    background-size: cover;
+    background-position: center;
+}
+.car-color{
+    height: 25%;
+    width: 10%;
+    background-color: #358c75;
+    /* position: absolute; */
+    /* z-index: 8; */
+}
+
+
+.rea{
+    border-left: solid 5px #c92d4b;
+}
+.red{
+    border-left: solid 5px #f91536;
+}
+.bul{
+
+}
+.ora{
+    border-left:solid 5px #f58020 ;
+}
+.dar{
+    border-left: solid 5px #b6babd;
+}
+.pur{
+    border-left: solid 5px #2293d1;
+}
+.sea{
+    border-left: solid 5px #5e8faa;
+}
+.gre{
+    border-left: solid 5px #358c75;
+}
+.sky{
+    border-left: solid 5px #37bedd;
+}
+.lit{
+    border-left: solid 5px #6cd3bf;
+}
+
+
+
+.meo{
+    background-color: #c92d4b;
+
+
+}
+.uri{
+    background-color: #5e8faa;
+
+
+}
+.ine{
+    background-color: #218dc8;
+
+
+}
+.ari{
+    background-color: #f91536;
+
+
+}
+.aas{
+    background-color: #b6babd;
+
+
+}
+.ben{
+    background-color: #f58020;
+
+
+}
+.des{
+    background-color: #6cd3bf;
+
+
+}
+.ull{
+    background-color: #3671c6;
+
+
+}
+.ams{
+    background-color: #37bedd;
+
+
+}
+
+.sched-hold > .prev:nth-child(1)::after{
+
+    content: "PREVIOUS";
+
+}
+
+/* .driv-ers > .car-tile:nth-child(1):hover{
+    border: solid 10px black;
+} */
+
+.tile-one > .car-tile:nth-child(1):hover{
+    border-right: solid 1px #c92d4b;
+    border-bottom: solid 1px #c92d4b;
+
+}.tile-one > .car-tile:nth-child(2):hover{
+    border-right: solid 1px #5e8faa;
+    border-bottom: solid 1px #5e8faa;
+
+}.tile-one > .car-tile:nth-child(3):hover{
+    border-right: solid 1px #218dc8;
+    border-bottom: solid 1px #218dc8;
+
+}
+
+
+.tile-two > .car-tile:nth-child(1):hover{
+    border-right: solid 1px #358c75;
+    border-bottom: solid 1px #358c75;
+
+}.tile-two > .car-tile:nth-child(2):hover{
+    border-right: solid 1px #f91536;
+    border-bottom: solid 1px #f91536;
+
+}.tile-two > .car-tile:nth-child(3):hover{
+    border-right: solid 1px #b6babd;
+    border-bottom: solid 1px #b6babd;
+}
+
+.tile-wan > .car-tile:nth-child(1):hover{
+    border-right: solid 1px #f58020;
+    border-bottom: solid 1px #f58020;
+
+}.tile-wan > .car-tile:nth-child(2):hover{
+    border-right: solid 1px #6cd3bf;
+    border-bottom: solid 1px #6cd3bf;
+
+}.tile-wan > .car-tile:nth-child(3):hover{
+    border-right: solid 1px #3671c6;
+    border-bottom: solid 1px #3671c6;
+
+}
+
+.tile-gre > .car-tile:nth-child(1):hover{
+    border-right: solid 1px #37bedd;
+    border-bottom: solid 1px #37bedd;
+}

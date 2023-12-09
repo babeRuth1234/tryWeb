@@ -1,0 +1,22 @@
+.shop-banner{
+    background: linear-gradient( to left,transparent 0%,black 100%),url(./images/DT_A_spot_EN.webp);
+    /* border-bottom: 2px solid #e10600; */
+    
+}
+
+.the-shop-items{
+    /* background: url(./images/IMG_20230627_184803.jpg); */
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.the-main-item{
+    background: #fff;
+}
+
+.item-desc{
+    color: #1f1f27;
+}

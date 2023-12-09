@@ -1,0 +1,73 @@
+@media screen and (max-width: 1277px) {
+    .nav-options{
+        padding-top: 10%;
+        width: 100%;
+        flex-direction: column; 
+        height: fit-content;
+        align-items: flex-start;
+        padding: 4%;
+        color: #1f1f27;
+        background-color: #fff;
+        /* border: solid 1px yellowgreen; */
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        overflow-y: scroll;
+
+
+    }
+
+    .shiba {
+        display: flex;
+        width: 180%;
+        /* border: solid 1px turquoise; */
+    }
+
+   
+    .list-up-cont{
+        /* border: solid 1px rgb(205, 50, 50); */
+
+        color: #1f1f27;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .feat {
+        color: #1f1f27;
+        display: flex;
+        width: 50%;
+        border-bottom-right-radius: 7px;
+        padding-top: 1.4%;
+        padding-bottom: 1.4%;
+        padding-right: 15%;
+        box-sizing: border-box;
+        border-right: solid 1px #d0d0d2;
+        border-bottom: solid 1px #d0d2d2;
+        /* border: solid 1px yellowgreen; */
+        justify-content: flex-start;
+
+    }
+
+    .word {
+        flex-direction: column;
+    }
+
+    .left-long{
+        width: 100%;
+        height: fit-content;
+        /* border: solid greenyellow 2px; */
+        
+    }
+
+    .drop-box-buttom{
+        display: flex;
+        flex-direction: column;
+    }
+}
